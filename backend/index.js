@@ -3,9 +3,10 @@ const { createTodo, updateTodo } = require("./Validation.js");
 const { todo } = require("./db");
 const app = express();
 const PORT = 3000;
-const zod = require("zod");
+const cors=require("cors")
 
 app.use(express.json())
+app.use(cors())
 
 app.post("/todo", async (req, res) => {
   const createPayload = req.body;
