@@ -35,9 +35,9 @@ const CreateTodo = () => {
   return (
     <>
     <label>Title:</label>
-    <input type='text' placeholder='title' onChange={populateTitle}/><br/>
+    <input type='text' placeholder='title' onChange={populateTitle}/><br/><br/>
     <label>Description:</label>
-    <input type='text' placeholder='description' onChange={populateDesc}/><br/>
+    <input type='text' placeholder='description' onChange={populateDesc}/><br/><br/>
     <button onClick={createTodo}>Create Todo</button>
     </>
   )
